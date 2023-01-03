@@ -1,166 +1,167 @@
-
-.wrapper{
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.container1 {
     display: grid;
-    
-    grid-template-areas: "a b c";
+    grid-template-areas:
+        "h h1 h2 ";
 }
-.wrapper >*{
-    height: 75px;
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-.container{
-    display: grid;
-    grid-template-areas: 
-    "d d d"
-    "e e e"
-    ;
-}
-.container1{
-    display: grid;
-    grid-template-areas: 
-    "f f f"
-
-    ;
-
-}
-.container >*{
-    height: 75px;
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    
-}
-.container1{
-    background: black;
-    grid-area: f;
-    height: 5px;
-}
-
 .container1 >*{
     height: 75px;
-    display: grid;  
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
-.header{
-    background: blue;
-    grid-area: a;
+.container2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+        "b b ";
 }
-.heading1{
-    background: grey;
-    color: white;
-    grid-area: b;
-}
-.heading2{
-    background: purple;
-    grid-area: c;
-}
-.news{
+.container2 >*{
     font-style: italic;
     font-size: 50px;
     background: white;
     grid-area: d;
 }
-.letter{
-    font-size: 75px;
-    font-style: italic;
-    background: white;
-    grid-area: e;
+
+.container3 {
+    display: grid;
+    grid-template-areas: 
+        "img1 img2 ad"
+        ;
 }
-.img1{
-    grid-area: f;
-    border-color: black;
-    border-style: solid;
-    
-}
-.img2{
-    grid-area: g;
-    border-color: black;
-    border-style: solid;
-    
-}
-.img > *{
+.container3 > *{
     background: no-repeat center center;
     height: 500px;
     width: 100%;
     display: grid;
-    background-size:cover;
-    
-    
-    
-}
-.img{
-        display: grid;
-        
-        gap: 1px;
-        grid-template-areas: 
-        "f g"
-        "ih1 ih2"
-        "p1 p2"
-        "mf mf"
-        ;
-    
-}
-.img-head1{
-    grid-area: ih1;
-    background: yellow;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
+    background-size:cover; 
     border-color: black;
-    
-}
-.img-head2{
-    grid-area: ih2;
-    background: pink;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    border-color: black;
-    
-   
-}
-.img > *{
-    justify-content: center;
-    align-items: center;
-}
-.para2{
-    grid-area: p2;
-    height: 90px;
-    background: white;
-    
-    ;
-}
-
-.para1{
-    grid-area: p1;
-    height: 90px;
-    
-    background: white;
-    
-    
-}
-.minifooter{
-    gap: 5px;
-    grid-area: mf;
-    background: purple;
-    height: 50px;
-    width: 100%;
-    border-color: black white white;
     border-style: solid;
 }
-.footer{
-    background: blue;
-    
+
+
+.adcontainer{
+    border: solid;
+    height: 90px;
     width: 100%;
-    height: 25px;
     justify-content: center;
-    text-align: center;
-    padding-top: 10px;
+    align-items: center;
+    display: grid;
+    grid-template-areas: "ad2 ad2 ad2";
+}
+.advertisement{
+    justify-content: center;
+    align-items: center;
+
+}
+.header {
+    grid-area: h;
+    background: grey;
+}
+
+.header1 {
+    background: purple;
+    grid-area: h1;
+}
+
+.header2 {
+    background: brown;
+    grid-area: h2;
+}
+
+.banner {
+    grid-area: b;
+    height: 150px;
+    padding-top: 40px;
     
 }
 
+.img1 {
+    grid-area: img1;
+}
 
+.img2 {
+    grid-area: img2;
+}
+
+
+
+.imgdesc1 {
+    grid-area: id1;
+    
+}
+
+.imgdesc2 {
+    grid-area: id2;
+    margin-left: 25px;
+}
+
+.sub-footer {
+    grid-area: sf;
+    background: purple;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+        
+    
+}
+
+.para1heading {
+    grid-area: ph1;
+}
+
+.para1desc {
+    grid-area: pd1;
+}
+
+.para2heading {
+    grid-area: ph2;
+}
+
+.para2desc {
+    grid-area: pd2;
+}
+
+.para3heading {
+    grid-area: ph3;
+}
+
+.para3desc {
+    grid-area: pd3;
+}
+
+.para4heading {
+    grid-area: ph4;
+}
+
+.para4desc {
+    grid-area: pd4;
+}
+
+.footer {
+    grid-area: f;
+        background: grey;
+        height: 30px;
+        width: 100%;
+        padding-top: 5px;
+        justify-content: center;
+        text-align: center;
+        
+        
+   
+}
+
+.advertisement {
+    grid-area: ad;
+}
+.advertisement2 {
+    grid-area: ad2;
+}
